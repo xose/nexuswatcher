@@ -1,0 +1,14 @@
+/target
+/src/main/generated-sources
+/dependency-reduced-pom.xml
+
+# Eclipse
+/.classpath
+/.project
+/.settings
+
+# Xtend
+/src/main/xtend-gen
+
+# OSX
+.DS_Store
