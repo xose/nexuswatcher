@@ -140,6 +140,7 @@ class ResponseListener extends BufferingResponseListener {
 				case result.failed: 'ERROR ' + result.failure.^class.simpleName
 				case result.response.status != HttpStatus::OK_200: 'HTTP ' + result.response.reason
 				case contentAsString.contains('hardware-sold-out'): 'SOLD OUT'
+				case contentAsString.contains('hardware-large-print'): 'SOON'
 				default: 'AVAILABLE!'
 			})
 	}
